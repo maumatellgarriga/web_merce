@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Flexbin &mdash; Flexible &amp; Pure CSS Gallery Layout Like Google Images and 500px.com</title>
+    <title>Mercè Aumatell</title>
     <meta name="viewport" content="width:device-width, initial-scale=1" />
     <link href="flexbin.css" type="text/css" rel="stylesheet" media="all" />
     <style>
@@ -13,41 +13,38 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swipebox.css">
+    <script type="text/javascript">
+        var fs = require('fs');
+        var files = fs.readdirSync('/images_big/');
+        var num_files = length(files);
+        var div = document.getElementById("grid1");
 
+
+        for (i = 0; i < num_files; i++) {
+            div.append('<a href="images_big/background' + i + '.jpg + " class="swipebox" title="City" rel="gallery1">\
+                            < img src = "images_big/background' + i + '.jpg" alt = "image" ></a >');
+        }
+    </script>
 </head>
 
 <body>
-    <div class="flexbin flexbin-margin container">
-        <a href="background3.jpg" class="swipebox" title="City" rel="gallery1">
-            <img src="background3.jpg" alt="image">
+    <div id="grid1" class="flexbin flexbin-margin container">
+        <a href="images_big/background3.jpg" class="swipebox" title="City" rel="gallery1">
+            <img src="images_big/background3.jpg" alt="image">
         </a>
-        <a href="background2.jpg" class="swipebox" title="City" rel="gallery1">
-            <img src="background2.jpg" alt="image">
+        <a href="images_big/background2.jpg" class="swipebox" title="City" rel="gallery1">
+            <img src="images_big/background2.jpg" alt="image">
         </a>
-        <a href="background4.jpg" class="swipebox" title="City" rel="gallery2">
-            <img src="background4.jpg" alt="image">
+        <a href="images_big/background4.jpg" class="swipebox" title="City" rel="gallery2">
+            <img src="images_big/background4.jpg" alt="image">
         </a>
-        <a href="background4.jpg" class="swipebox" title="City" rel="gallery3">
-            <img src="background4.jpg" alt="image">
+        <a href="images_big/background4.jpg" class="swipebox" title="City" rel="gallery3">
+            <img src="images_big/background4.jpg" alt="image">
         </a>
-        <a href="background4.jpg" class="swipebox" title="City" rel="gallery3">
-            <img src="background4.jpg" alt="image">
+        <a href="images_big/background4.jpg" class="swipebox" title="City" rel="gallery3">
+            <img src="images_big/background4.jpg" alt="image">
         </a>
-        <a href="background2.jpg" class="swipebox" title="City" rel="gallery2">
-            <img src="background2.jpg" alt="image">
-        </a>
-        <a href="background3.jpg" class="swipebox" title="City" rel="gallery1">
-            <img src="background3.jpg" alt="image">
-        </a>
-        <a href="background4.jpg" class="swipebox" title="City" rel="gallery2">
-            <img src="background4.jpg" alt="image">
-        </a>
-        <a href="background2.jpg" class="swipebox" title="City" rel="gallery3">
-            <img src="background2.jpg" alt="image">
-        </a>
-        <a href="background3.jpg" class="swipebox" title="City" rel="gallery2">
-            <img src="background3.jpg" alt="image">
-        </a>
+
     </div>
     <script src="jquery-3.5.1.min.js"></script>
     <script src="jquery.swipebox.min.js"></script>
@@ -67,10 +64,10 @@
             $('#gallery').on('click', function(e) {
                 e.preventDefault();
                 $.swipebox([{
-                    href: 'demo/images/big-1.jpg',
+                    href: 'demo/images_big/big-1.jpg',
                     title: 'My Caption'
                 }, {
-                    href: 'demo/images/big-2.jpg',
+                    href: 'demo/images_big/big-2.jpg',
                     title: 'My Second Caption'
                 }]);
             });

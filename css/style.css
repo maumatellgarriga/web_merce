@@ -1,8 +1,7 @@
 body {
     font-family: 'Roboto', serif;
-    border-top: 5px solid #58f5bb;
-    overflow-x: hidden !important;
-    background: #fff;
+    overflow-x: scroll !important;
+    background: rgb(255, 255, 255);
     color: #666;
 }
 
@@ -95,12 +94,23 @@ header h1 {
     top: -8px;
 }
 
+
+/*
+    MIR: Control width and margins of container.
+*/
+
 .container:nth-child(even) {
     background: whitesmoke;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .container:nth-child(odd) {
     background: #fff;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 #box-container {

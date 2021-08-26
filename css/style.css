@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', serif;
+    font-family: 'Verdana';
     overflow-x: scroll !important;
     background: rgb(255, 255, 255);
     color: #666;
@@ -15,7 +15,7 @@ h3,
 h4,
 h4,
 h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 
 a {
@@ -154,7 +154,6 @@ header h1 {
 
 footer {
     font-size: 1.3rem;
-    font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
     text-align: center;
     color: #666;
     margin: 2rem 0;

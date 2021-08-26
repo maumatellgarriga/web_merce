@@ -2314,7 +2314,6 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: sans-serif;
     /* 1 */
     font-size: 100%;
     /* 1 */
@@ -2580,7 +2579,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-style: normal;
 }
 
 ul:not(.browser-default) {
@@ -3463,12 +3462,14 @@ table span.badge {
 .container-m {
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
 }
 
 @media only screen and (min-width: 601px) {
     .container-m {
         margin-left: 10%;
         margin-right: 10%;
+        text-align: center;
     }
 }
 
@@ -4388,7 +4389,6 @@ nav .brand-logo {
     display: inline-block;
     font-size: 1.6rem;
     padding: 10;
-    font-family: Helvetica;
 }
 
 nav .brand-logo.center {
@@ -4565,7 +4565,6 @@ a {
 
 html {
     line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.87);
 }

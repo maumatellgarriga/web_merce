@@ -29,7 +29,7 @@
 }
 
 .flexbin.flexbin-margin {
-    margin: 30px;
+    margin: 20px;
     left: 0px;
 }
 
@@ -38,7 +38,7 @@
         display: flex;
         overflow: hidden;
         flex-wrap: wrap;
-        margin: -20px;
+        margin: -10px;
     }
     .flexbin:after {
         content: '';
@@ -50,7 +50,7 @@
         position: relative;
         display: block;
         height: 150px;
-        margin: 20px;
+        margin: 10px;
         flex-grow: 1;
     }
     .flexbin>*>img {
@@ -61,7 +61,7 @@
         vertical-align: bottom;
     }
     .flexbin.flexbin-margin {
-        margin: 20px;
+        margin: 10px;
         left: 0px;
     }
 }
@@ -71,7 +71,7 @@
         display: flex;
         overflow: hidden;
         flex-wrap: wrap;
-        margin: -20px;
+        margin: -5px;
     }
     .flexbin:after {
         content: '';
@@ -83,7 +83,7 @@
         position: relative;
         display: block;
         height: 100px;
-        margin: 20px;
+        margin: 5px;
         flex-grow: 1;
     }
     .flexbin>*>img {
@@ -94,7 +94,7 @@
         vertical-align: bottom;
     }
     .flexbin.flexbin-margin {
-        margin: 10px;
+        margin: 5px;
         left: 0px;
     }
 }

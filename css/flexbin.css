@@ -29,7 +29,7 @@
 }
 
 .flexbin.flexbin-margin {
-    margin: 20px;
+    margin: 30px;
     left: 0px;
 }
 
@@ -94,7 +94,7 @@
         vertical-align: bottom;
     }
     .flexbin.flexbin-margin {
-        margin: 20px;
+        margin: 10px;
         left: 0px;
     }
 }

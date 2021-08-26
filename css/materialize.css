@@ -3502,8 +3502,14 @@ table span.badge {
 }
 
 .row {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.row-title {
+    margin-left: 100px;
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -3519,6 +3525,7 @@ table span.badge {
     box-sizing: border-box;
     padding: 0 0.75rem;
     min-height: 1px;
+    vertical-align: middle;
 }
 
 .row .col[class*="push-"],
@@ -4786,6 +4793,14 @@ small {
     .flow-text {
         font-size: 1.2rem;
     }
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
 }
 
 .scale-transition {

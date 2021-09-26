@@ -99,7 +99,7 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-slider .slide-loading {
-    background: url(../img/loader.gif) no-repeat center center;
+    background: url(../css/img/icons.png) no-repeat center center;
 }
 
 #swipebox-bottom-bar,
@@ -131,16 +131,21 @@ html.swipebox-html.swipebox-touch {
     transform: translate3d(0, 50px, 0);
 }
 
+
+/* Font type of photo titles */
+
 #swipebox-title {
     display: block;
     width: 100%;
     text-align: center;
+    font-family: 'Italic';
+    color: rgb(140, 60, 60);
 }
 
 #swipebox-prev,
 #swipebox-next,
 #swipebox-close {
-    background-image: url(icons.png);
+    background-image: url(../css/img/icons.png);
     background-repeat: no-repeat;
     border: none !important;
     text-decoration: none !important;
@@ -211,14 +216,14 @@ html.swipebox-html.swipebox-touch {
 
 .swipebox-touch #swipebox-container:before {
     left: 0;
-    -webkit-box-shadow: inset 10px 0px 10px -8px #ffffffe7;
-    box-shadow: inset 10px 0px 10px -8px #ffffffe7;
+    -webkit-box-shadow: inset 10px 0px 10px -8px #656565;
+    box-shadow: inset 10px 0px 10px -8px #656565;
 }
 
 .swipebox-touch #swipebox-container:after {
     right: 0;
-    -webkit-box-shadow: inset -10px 0px 10px -8px #ffffffe7;
-    box-shadow: inset -10px 0px 10px -8px #ffffffe7;
+    -webkit-box-shadow: inset -10px 0px 10px -8px #656565;
+    box-shadow: inset -10px 0px 10px -8px #656565;
 }
 
 .swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before {
@@ -292,7 +297,7 @@ html.swipebox-html.swipebox-touch {
 --------------------------*/
 
 #swipebox-overlay {
-    background: #fffefe;
+    background: #fffdfd;
 }
 
 #swipebox-bottom-bar,

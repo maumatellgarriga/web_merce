@@ -1,5 +1,7 @@
+/* Body font type/ font family.*/
+
 body {
-    font-family: 'Verdana';
+    font-family: 'Helvetica light';
     overflow-x: scroll !important;
     background: rgb(255, 255, 255);
     color: #666;

@@ -138,8 +138,9 @@ html.swipebox-html.swipebox-touch {
     display: block;
     width: 100%;
     text-align: center;
-    font-family: 'Italic';
-    color: rgb(140, 60, 60);
+    font-family: Montserrat;
+    color: #172625;
+    font-size: 25px;
 }
 
 #swipebox-prev,
@@ -297,18 +298,18 @@ html.swipebox-html.swipebox-touch {
 --------------------------*/
 
 #swipebox-overlay {
-    background: #fffdfd;
+    background: #F2F0F0;
 }
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-    opacity: 0.95;
+    background: #F2F0F0;
+    opacity: 0.55;
 }
 
 #swipebox-top-bar {
-    color: black !important;
+    color: #798C89 !important;
     font-size: 15px;
     line-height: 43px;
 }

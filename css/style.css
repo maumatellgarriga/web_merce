@@ -1,10 +1,14 @@
 /* Body font type/ font family.*/
 
 body {
-    font-family: 'Helvetica light';
+    font-family: 'GT Super Text';
     overflow-x: scroll !important;
-    background: rgb(255, 255, 255);
-    color: #666;
+    background: #F2F0F0;
+    color: #798C89;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
 }
 
 body img {
@@ -17,12 +21,12 @@ h3,
 h4,
 h4,
 h6 {
-    font-family: sans-serif;
+    font-family: 'GT Super Text', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #798C89;
     font-weight: 700;
 }
 
@@ -152,17 +156,6 @@ header h1 {
     vertical-align: bottom;
     min-height: 100%;
     max-width: 100%;
-}
-
-footer {
-    font-size: 1rem;
-    text-align: center;
-    color: #666;
-    margin: 2rem 0;
-}
-
-footer a {
-    color: #666;
 }
 
 @media screen and (max-width: 799px) {

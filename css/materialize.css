@@ -1,3 +1,121 @@
+/*!
+ * Materialize v1.0.0 (http://materializecss.com)
+ * Copyright 2014-2017 Materialize
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ */
+
+.materialize-red {
+    background-color: #e51c23 !important;
+}
+
+.materialize-red-text {
+    color: #e51c23 !important;
+}
+
+.materialize-red.lighten-5 {
+    background-color: #fdeaeb !important;
+}
+
+.materialize-red-text.text-lighten-5 {
+    color: #fdeaeb !important;
+}
+
+.materialize-red.lighten-4 {
+    background-color: #f8c1c3 !important;
+}
+
+.materialize-red-text.text-lighten-4 {
+    color: #f8c1c3 !important;
+}
+
+.materialize-red.lighten-3 {
+    background-color: #f3989b !important;
+}
+
+.materialize-red-text.text-lighten-3 {
+    color: #f3989b !important;
+}
+
+.materialize-red.lighten-2 {
+    background-color: #ee6e73 !important;
+}
+
+.materialize-red-text.text-lighten-2 {
+    color: #ee6e73 !important;
+}
+
+.materialize-red.lighten-1 {
+    background-color: #ea454b !important;
+}
+
+.materialize-red-text.text-lighten-1 {
+    color: #ea454b !important;
+}
+
+.materialize-red.darken-1 {
+    background-color: #d0181e !important;
+}
+
+.materialize-red-text.text-darken-1 {
+    color: #d0181e !important;
+}
+
+.materialize-red.darken-2 {
+    background-color: #b9151b !important;
+}
+
+.materialize-red-text.text-darken-2 {
+    color: #b9151b !important;
+}
+
+.materialize-red.darken-3 {
+    background-color: #a21318 !important;
+}
+
+.materialize-red-text.text-darken-3 {
+    color: #a21318 !important;
+}
+
+.materialize-red.darken-4 {
+    background-color: #8b1014 !important;
+}
+
+.materialize-red-text.text-darken-4 {
+    color: #8b1014 !important;
+}
+
+.red {
+    background-color: #F44336 !important;
+}
+
+.red-text {
+    color: #F44336 !important;
+}
+
+.red.lighten-5 {
+    background-color: #FFEBEE !important;
+}
+
+.red-text.text-lighten-5 {
+    color: #FFEBEE !important;
+}
+
+.red.lighten-4 {
+    background-color: #FFCDD2 !important;
+}
+
+.red-text.text-lighten-4 {
+    color: #FFCDD2 !important;
+}
+
+.red.lighten-3 {
+    background-color: #EF9A9A !important;
+}
+
+.red-text.text-lighten-3 {
+    color: #EF9A9A !important;
+}
+
 .red.lighten-2 {
     background-color: #E57373 !important;
 }
@@ -2051,21 +2169,11 @@ html {
 
 
 /**
- * Remove the margin in all browsers (opinionated).
- */
-
-body {
-    margin: 0;
-}
-
-
-/**
  * Add the correct display in IE 9-.
  */
 
 article,
 aside,
-footer,
 header,
 nav,
 section {
@@ -2097,7 +2205,8 @@ figcaption,
 figure,
 main {
     /* 1 */
-    display: block;
+    display: flex;
+    flex: 1 0 auto;
 }
 
 
@@ -2597,15 +2706,17 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
-.valign-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+@media only screen and (min-width: 600px) {
+    .valign-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
 
 .clearfix {
@@ -2964,8 +3075,11 @@ ul.staggered-list li {
 
 .page-footer {
     padding-top: 20px;
-    color: rgb(32, 31, 31);
-    background-color: #e6e6e6;
+    font-size: 1rem;
+    text-align: center;
+    color: #798C89;
+    margin: 0;
+    background-color: #D9D4D2;
 }
 
 .page-footer .footer-copyright {
@@ -2985,7 +3099,7 @@ ul.staggered-list li {
     justify-content: space-between;
     padding: 10px 0px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(51, 51, 51, 0.08);
+    background-color: #97A4A6;
 }
 
 table,
@@ -3463,6 +3577,7 @@ table span.badge {
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
+    vertical-align: middle;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3966,9 +4081,6 @@ table span.badge {
     }
     .row .col.l4 {
         width: 33.3333333333%;
-        margin-left: auto;
-        left: auto;
-        right: auto;
     }
     .row .col.l5 {
         width: 41.6666666667%;
@@ -4639,7 +4751,30 @@ h5 {
 h6 {
     font-size: 1.15rem;
     line-height: 110%;
-    margin: 0.7666666667rem 0 0.46rem 0;
+}
+
+@media only screen and (min-width: 0px) {
+    h6 {
+        margin: 0.7666666667rem 0.2rem 0.46rem 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h6 {
+        margin: 0.7666666667rem 2rem 0.46rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    h6 {
+        margin: 0.7666666667rem 5rem 0.46rem 5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h6 {
+        margin: 0.7666666667rem 7rem 0.46rem 7rem;
+    }
 }
 
 em {
@@ -5020,7 +5155,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-    color: #ffab40;
+    color: #798C89;
     margin-right: 24px;
     -webkit-transition: color .3s ease;
     transition: color .3s ease;
@@ -5028,7 +5163,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-    color: #ffd8a6;
+    color: #798C89;
 }
 
 .card .card-reveal {

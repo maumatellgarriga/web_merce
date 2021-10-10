@@ -27,6 +27,7 @@ html.swipebox-html.swipebox-touch {
     position: relative;
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 #swipebox-slider {
@@ -98,7 +99,7 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-slider .slide-loading {
-    background: url(../img/loader.gif) no-repeat center center;
+    background: url(../css/img/icons.png) no-repeat center center;
 }
 
 #swipebox-bottom-bar,
@@ -130,16 +131,22 @@ html.swipebox-html.swipebox-touch {
     transform: translate3d(0, 50px, 0);
 }
 
+
+/* Font type of photo titles */
+
 #swipebox-title {
     display: block;
     width: 100%;
     text-align: center;
+    font-family: Montserrat;
+    color: #172625;
+    font-size: 25px;
 }
 
 #swipebox-prev,
 #swipebox-next,
 #swipebox-close {
-    background-image: url(icons.png);
+    background-image: url(../css/img/icons.png);
     background-repeat: no-repeat;
     border: none !important;
     text-decoration: none !important;
@@ -210,14 +217,14 @@ html.swipebox-html.swipebox-touch {
 
 .swipebox-touch #swipebox-container:before {
     left: 0;
-    -webkit-box-shadow: inset 10px 0px 10px -8px #ffffffe7;
-    box-shadow: inset 10px 0px 10px -8px #ffffffe7;
+    -webkit-box-shadow: inset 10px 0px 10px -8px #656565;
+    box-shadow: inset 10px 0px 10px -8px #656565;
 }
 
 .swipebox-touch #swipebox-container:after {
     right: 0;
-    -webkit-box-shadow: inset -10px 0px 10px -8px #ffffffe7;
-    box-shadow: inset -10px 0px 10px -8px #ffffffe7;
+    -webkit-box-shadow: inset -10px 0px 10px -8px #656565;
+    box-shadow: inset -10px 0px 10px -8px #656565;
 }
 
 .swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before {
@@ -291,19 +298,18 @@ html.swipebox-html.swipebox-touch {
 --------------------------*/
 
 #swipebox-overlay {
-    background: #fffefe;
+    background: #F2F0F0;
 }
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-    opacity: 0.95;
+    background: #F2F0F0;
+    opacity: 0.55;
 }
 
 #swipebox-top-bar {
-    color: black !important;
+    color: #798C89 !important;
     font-size: 15px;
     line-height: 43px;
-    font-family: Helvetica, Arial, sans-serif;
 }

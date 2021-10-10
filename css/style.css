@@ -1,9 +1,20 @@
+/* Body font type/ font family.*/
+
+@font-face {
+    font-family: "GT Super Text";
+    src: url("//db.onlinewebfonts.com/t/ce11b890e2dda29369a1a27b5e58397a.eot");
+    src: url("//db.onlinewebfonts.com/t/ce11b890e2dda29369a1a27b5e58397a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ce11b890e2dda29369a1a27b5e58397a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ce11b890e2dda29369a1a27b5e58397a.woff") format("woff"), url("//db.onlinewebfonts.com/t/ce11b890e2dda29369a1a27b5e58397a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ce11b890e2dda29369a1a27b5e58397a.svg#GT Super Text") format("svg");
+}
+
 body {
-    font-family: 'Roboto', serif;
-    border-top: 5px solid #58f5bb;
-    overflow-x: hidden !important;
-    background: #fff;
-    color: #666;
+    font-family: 'GT Super Text';
+    overflow-x: scroll !important;
+    background: #F2F0F0;
+    color: #798C89;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
 }
 
 body img {
@@ -16,12 +27,12 @@ h3,
 h4,
 h4,
 h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'GT Super Text', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #798C89;
     font-weight: 700;
 }
 
@@ -95,12 +106,23 @@ header h1 {
     top: -8px;
 }
 
+
+/*
+    MIR: Control width and margins of container.
+*/
+
 .container:nth-child(even) {
     background: whitesmoke;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .container:nth-child(odd) {
     background: #fff;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 #box-container {
@@ -140,18 +162,6 @@ header h1 {
     vertical-align: bottom;
     min-height: 100%;
     max-width: 100%;
-}
-
-footer {
-    font-size: 1.3rem;
-    font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-    color: #666;
-    margin: 2rem 0;
-}
-
-footer a {
-    color: #666;
 }
 
 @media screen and (max-width: 799px) {

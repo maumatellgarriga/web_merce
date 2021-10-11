@@ -47,59 +47,7 @@
     </header>
     <main>
         <div class="container-m">
-            <div class="flexbin flexbin-margin">
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image1.JPG" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image1.JPG" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image2.jpeg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image2.jpeg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image3.JPG" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image3.JPG" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image4.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image4.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image5.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image5.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image6.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image6.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image7.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image7.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image8.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image8.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image9.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image9.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image10.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image10.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image11.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image11.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image12.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image12.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image13.jpeg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image13.jpeg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image14.jpeg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image14.jpeg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image15.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image15.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image16.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image16.jpg" alt="image">
-                </a>
-                <a href="https://web-merce.s3.eu-central-1.amazonaws.com/img/image17.jpg" class="swipebox" title="City" rel="gallery1">
-                    <img src="https://web-merce.s3.eu-central-1.amazonaws.com/img/image17.jpg" alt="image">
-                </a>
-            </div>
+            <div id="grid" class="flexbin flexbin-margin"></div>
         </div>
     </main>
     <footer class="page-footer">
@@ -124,7 +72,15 @@
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        var fs = require('fs');
+        var files = fs.readdirSync('img/');
 
+        function display(img) {
+            document.getElementById('grid').innerHTML += '<a href=' + img + 'rel="gallery1"> <img src=' + img + 'alt="image"> </a>';
+        }
+        files.forEach(display);
+    </script>
     <script type="text/javascript">
         jQuery(function($) {
             $(".swipebox").swipebox();

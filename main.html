@@ -74,7 +74,7 @@
     <script src="js/jquery.swipebox.min.js"></script>
     <script type="text/javascript">
         var fs = require('fs');
-        var files = fs.readdirSync('img/');
+        var files = fs.readdir('img/');
 
         function display(img) {
             document.getElementById('grid').innerHTML += '<a href=' + img + 'rel="gallery1"> <img src=' + img + 'alt="image"> </a>';

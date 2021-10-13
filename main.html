@@ -72,9 +72,11 @@
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/bluebird.min.js"></script>
+    <script src="js/fs.js"></script>
     <script type="text/javascript">
         var fs = require('fs');
-        var files = fs.readdir('img/');
+        var files = fs.readdirSync('img/');
 
         function display(img) {
             document.getElementById('grid').innerHTML += '<a href=' + img + 'rel="gallery1"> <img src=' + img + 'alt="image"> </a>';

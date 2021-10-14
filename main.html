@@ -127,7 +127,9 @@
     <script src="js/require/bin/r.js"></script>
     <script src="js/aws-sdk.js"></script>
     <script type="text/javascript">
-        var aws = require('aws-sdk');
+        require(['aws-sdk'], function(aws) {
+            //foo is now loaded.
+        });
     </script>
     <script type="text/javascript">
         jQuery(function($) {

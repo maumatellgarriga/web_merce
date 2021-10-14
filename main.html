@@ -128,6 +128,9 @@
     <script src="aws-sdk.js"></script>
     <script type="text/javascript">
         require(['aws-sdk'], function(AWS) {
+            AWS.config.update({
+                region: 'eu-central-1'
+            })
             var s3 = new AWS.S3();
             var params = {
                 Bucket: "examplebucket",

@@ -127,8 +127,8 @@
     <script src="js/require/bin/r.js"></script>
     <script src="aws-sdk.js"></script>
     <script type="text/javascript">
-        require(['aws-sdk'], function(aws) {
-            var s3 = new aws.S3();
+        require(['aws-sdk'], function(AWS) {
+            var s3 = new AWS.S3();
             var params = {
                 Bucket: "examplebucket",
                 MaxKeys: 2

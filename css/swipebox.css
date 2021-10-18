@@ -137,6 +137,8 @@ html.swipebox-html.swipebox-touch {
 #swipebox-title {
     display: block;
     width: 100%;
+    font-family: 'GT Super Text';
+    color: #798C89;
     text-align: center;
     font-size: 25px;
 }

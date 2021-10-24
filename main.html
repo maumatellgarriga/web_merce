@@ -411,25 +411,7 @@
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
-    <script src="js/require/require.js"></script>
-    <script src="js/require/bin/r.js"></script>
-    <script src="aws-sdk.js"></script>
-    <script type="text/javascript">
-        require(['aws-sdk'], function(AWS) {
-            AWS.config.update({
-                region: 'eu-central-1'
-            })
-            var s3 = new AWS.S3();
-            var params = {
-                Bucket: "www.merceaumatell.eu",
-                MaxKeys: 2
-            };
-            s3.listObjects(params, function(err, data) {
-                if (err) console.log(err, err.stack); // an error occurred
-                else console.log(data);
-            });
-        });
-    </script>
+
     <script type="text/javascript">
         jQuery(function($) {
             $(".swipebox").swipebox();

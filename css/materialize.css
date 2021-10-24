@@ -4677,7 +4677,6 @@ a {
 
 html {
     line-height: 1.5;
-    font-weight: normal;
     color: rgba(0, 0, 0, 0.87);
 }
 
@@ -4781,11 +4780,11 @@ em {
     font-style: italic;
 }
 
-strong {
-    font-weight: 500;
+.strong {
+    font-weight: 1000;
 }
 
-small {
+.small {
     font-size: 75%;
 }
 

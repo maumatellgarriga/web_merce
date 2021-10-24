@@ -1,0 +1,48 @@
+.grid-header {
+    margin-top: 5%;
+}
+
+.grid-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media only screen and (min-width: 401px) {
+    .grid-header {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .grid-header {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    .grid-header {
+        margin-top: 5%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+
+@media only screen and (min-width: 925px) {
+    .grid-header {
+        margin-top: 5%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    .grid-header {
+        margin-top: 5%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+}

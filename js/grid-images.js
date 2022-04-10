@@ -24,7 +24,7 @@ function extractImgPaths(xmlS3BucketResponse) {
     parser = new DOMParser();
     parsedResponse = parser.parseFromString(xmlS3BucketResponse, "text/xml");
     listBucketResult = Array.from(parsedResponse.getElementsByTagName("ListBucketResult")[0].getElementsByTagName("Contents"))
-    var isPathImage = path => path.startsWith('img/') & IMAGES_TYPES.some(char => path.endsWith(char))
+    var isPathImage = path => path.startsWith('img/') & IMAGES_TYPES.some(char => path.toLowerCase().endsWith(char))
     return shuffle(listBucketResult
         .map(content => content.getElementsByTagName('Key')[0].innerHTML)
         .filter(path => isPathImage(path)))

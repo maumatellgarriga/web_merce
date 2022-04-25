@@ -32,7 +32,7 @@ function extractImgPaths(xmlS3BucketResponse) {
 
 function extractImgTitle(imgPath) {
     title = imgPath.split('/')[1]
-    return title.split('_').join(' ')
+    return ' '.join(title.split('_'))
 }
 
 function generateImgHtml(imgPaths) {

@@ -39,10 +39,12 @@ function generateImgHtml(imgPaths) {
     var listHtml = imgPaths
     .map(path => {
         var host = HOST
+        var hostSmall = HOST
         var absoluteImgPath = host + path
+        var absoluteSmallImgPath = hostSmall + path
         var title = extractImgTitle(path)
         var template = 
-        `<a href=${absoluteImgPath} class=swipebox title=${title} rel=${title}> <img src=${absoluteImgPath} alt=image> </a>`
+        `<a href=${absoluteImgPath} class=swipebox title=${title} rel=${title}> <img src=${absoluteSmallImgPath} alt=image> </a>`
         return template
     }
     );

@@ -1,4 +1,5 @@
 HOST = "https://s3.eu-central-1.amazonaws.com/www.merceaumatell.eu/"
+HOST_RESIZED = "https://s3.eu-central-1.amazonaws.com/www.merceaumatell.eu-resized/"
 IMAGES_TYPES = [".jpg", ".jpeg", ".png"]
 
 function requestS3BucketContentList() {
@@ -39,7 +40,7 @@ function generateImgHtml(imgPaths) {
     var listHtml = imgPaths
     .map(path => {
         var host = HOST
-        var hostSmall = HOST
+        var hostSmall = HOST_RESIZED
         var absoluteImgPath = host + path
         var absoluteSmallImgPath = hostSmall + path
         var title = extractImgTitle(path)
